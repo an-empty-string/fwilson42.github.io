@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>printf("I'm %s.", me.name);</title>
+    <style>
+body {
+    background-color: #002b36;
+    color: #839496;
+}
+.include {
+    color: #dc322f;
+}
+.data {
+    color: #2aa198;
+}
+a, a:visited {
+    color: #2aa198;
+    text-decoration: underline;
+}
+.type {
+    color: #b58900;
+}
+.return {
+    color: #b58900;
+}
+.comment {
+    color: #839496;
+    opacity: 0.7;
+}
+    </style>
+</head>
+<body>
+    <pre>
+<span class="include">#include</span> <span class="data">&lt;stdlib.h&gt;</span>
+<span class="include">#include</span> <span class="data">&lt;stdio.h&gt;</span>
+
+<span class="type">typedef struct</span> person_ {
+    <span class="type">char</span>* name;
+    <span class="type">char</span>* occupation;
+    <span class="type">char</span>* skills[<span class="data">4</span>];
+    <span class="type">char</span>* projects[<span class="data">4</span>];
+} person;
+
+<span class="type">int</span> main() {
+    person me;
+
+    me.name = <span class="data">"Fox Connor Wilson"</span>;
+    me.occupation = <span class="data">"Student at TJHSST"</span>;
+
+    me.skills[<span class="data">0</span>] = <span class="data">"Computer security"</span>;
+    me.skills[<span class="data">1</span>] = <span class="data">"Systems administration"</span>;
+    me.skills[<span class="data">2</span>] = <span class="data">"Full-stack web development"</span>;
+    me.skills[<span class="data">3</span>] = <span class="data">"Programming (C, Python, Ruby, Java, JS, Rust, Befunge-93)"</span>;
+
+    me.projects[<span class="data">0</span>] = <span class="data">"pyIRC, an IRC framework (<a href="https://github.com/fwilson42/pyirc">https://github.com/fwilson42/pyirc</a>)"</span>;
+    me.projects[<span class="data">1</span>] = <span class="data">"Wispybot, an IRC bot (<a href="https://github.com/fwilson42/wispybot">https://github.com/fwilson42/wispybot</a>)"</span>;
+    me.projects[<span class="data">2</span>] = <span class="data">"Integrated Assessment System (<a href="https://github.com/openeducationproject/ias">https://github.com/openeducationproject/ias</a>)"</span>;
+    me.projects[<span class="data">3</span>] = <span class="data">"dep10y, rapid development and deployment to production"</span>;
+
+    <span class="return">return</span> <span class="data">0</span>;
+}
+
+<span class="comment">/**
+I don't actually know Befunge.
+
+However, I am quite good with Python and Ruby -- I know enough of C, Java, JS,
+and Rust anguages to work with them when it's needed. I've used the Flask
+microframework for Python web apps, as well as its Ruby counterpart, Sinatra.
+
+My team won $1,000 at Hack the North 2014 for dep10y, an application which
+facilitated collaborative development of software with a streamlined deployment
+process.
+
+My team won MITRE CTF two years in a row (2013 and 2014). In addition, we
+placed sixth in the 2014 picoCTF.
+
+You can get in touch by emailing "fwilson" at this domain.
+**/</span>
+    </pre>
+</body>
+</html>
